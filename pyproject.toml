@@ -1,0 +1,52 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "shortcut-audit"
+version = "0.1.0"
+description = "Can a model cheat on your dataset? Shortcut and leakage audits for robot, tactile and other sensor datasets."
+readme = "README.md"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+requires-python = ">=3.9"
+authors = [{ name = "Wen Chen (WayneUSC)" }]
+keywords = [
+  "shortcut learning", "data leakage", "dataset audit", "robot learning", "LeRobot",
+  "tactile sensing", "sensor data", "evaluation", "machine learning", "reproducibility",
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Science/Research",
+  "Intended Audience :: Developers",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+  "Topic :: Scientific/Engineering :: Information Analysis",
+]
+dependencies = [
+  "numpy>=1.22",
+  "scipy>=1.8",
+  "scikit-learn>=1.1",
+  "pandas>=1.4",
+]
+
+[project.optional-dependencies]
+parquet = ["pyarrow>=10"]
+lerobot = ["pyarrow>=10", "huggingface_hub>=0.20"]
+plot = ["matplotlib>=3.5"]
+dev = ["pytest>=7", "pyarrow>=10", "matplotlib>=3.5"]
+
+[project.scripts]
+shortcut-audit = "shortcut_audit.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/WayneUSC/shortcut-audit"
+Issues = "https://github.com/WayneUSC/shortcut-audit/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/shortcut_audit"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

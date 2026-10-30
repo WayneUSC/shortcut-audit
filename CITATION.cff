@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use shortcut-audit in your research, please cite it as below."
+title: "shortcut-audit: shortcut and leakage audits for sensor and robot datasets"
+authors:
+  - family-names: Chen
+    given-names: Wen
+version: 0.1.0
+date-released: 2026-10-29
+license: Apache-2.0
+repository-code: "https://github.com/WayneUSC/shortcut-audit"
+keywords:
+  - shortcut learning
+  - data leakage
+  - robot learning
+  - tactile sensing
+  - evaluation
