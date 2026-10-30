@@ -3,7 +3,7 @@
 **Can a model cheat on your dataset?**
 
 [![CI](https://github.com/WayneUSC/shortcut-audit/actions/workflows/ci.yml/badge.svg)](https://github.com/WayneUSC/shortcut-audit/actions/workflows/ci.yml)
-![Python](https://img.shields.io/badge/python-3.9%2B-blue)
+![Python](https://img.shields.io/badge/python-3.10%2B-blue)
 [![License](https://img.shields.io/badge/license-Apache--2.0-green)](LICENSE)
 
 Sensor and robot datasets fail quietly. Classes get recorded on different days while the sensor drifts. Every
@@ -29,7 +29,7 @@ pip install "git+https://github.com/WayneUSC/shortcut-audit"            # core
 pip install "shortcut-audit[lerobot] @ git+https://github.com/WayneUSC/shortcut-audit"  # + LeRobot / Hub
 ```
 
-Python 3.9+, depends on NumPy, SciPy, scikit-learn and pandas. Runs on a laptop CPU in seconds to a minute.
+Python 3.10+, depends on NumPy, SciPy, scikit-learn and pandas. Runs on a laptop CPU in seconds to a minute.
 
 ## Try it in 30 seconds
 

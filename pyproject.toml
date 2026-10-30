@@ -9,7 +9,7 @@ description = "Can a model cheat on your dataset? Shortcut and leakage audits fo
 readme = "README.md"
 license = "Apache-2.0"
 license-files = ["LICENSE"]
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 authors = [{ name = "Wen Chen (WayneUSC)" }]
 keywords = [
   "shortcut learning", "data leakage", "dataset audit", "robot learning", "LeRobot",
